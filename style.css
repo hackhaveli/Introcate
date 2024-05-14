@@ -44,7 +44,7 @@ nav {
   align-self: center;
   color: #FFF;
   font-family: "Itim", cursive;
-  font-size: 30px;
+  font-size: 1.7vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -55,7 +55,7 @@ nav {
   color: #00FF94;
   text-align: center;
   font-family: "Itim", cursive;
-  font-size: 30px;
+  font-size: 1.7vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -377,7 +377,7 @@ video {
 .thub-container{
   display: flex;
   justify-content: center; /* Adjust as needed */
-  aligh-items: center;
+  align-items: center;
 }
 .imgs{
   width: 500px;
@@ -410,8 +410,8 @@ video {
   padding-right: 15px;
 }
 .service-box{
-  width: 550px;
-  height: 300px;
+  width: 25vw;
+  height: 26vw;
   border-radius: 15px;
   background: rgba(74, 59, 59, 0.32);
   padding-top: 20px;
@@ -424,13 +424,13 @@ video {
 }
 .txt{
   color: #74FFC5;
+  background-color: #05FF00;
   text-align: center;
   font-family: Poppins;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: -5px;
 }
 .txt-para{
   color: #FFF;
@@ -481,17 +481,18 @@ video {
 /* Base styles for footer */
 .footer {
   width: 98%;
-  height: 500px;
   padding-top: 70px;
   background: rgba(41, 41, 41, 0.5); /* Adjust the last value (0.5) to change transparency */
-
   margin: 50px auto;
   display: flex;
   flex-direction: row; /* Original design for desktop */
   justify-content: space-between; /* Original design for desktop */
   align-items: center; /* Original design for desktop */
 }
-
+.left{
+  width: 80%;
+margin-left: 10vw;
+}
 #footer-logo {
   width: 25%;
   padding-left: 80px;
@@ -509,7 +510,8 @@ video {
   margin-left: 250px;
   margin-bottom: 75px;
 }
-.right-subpart{
+
+.right-subpart {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -545,8 +547,7 @@ h4 {
   margin-top: 50px;
   color: #fff;
   font-size: 20px;
-  margin-left: 60px;
-  
+
 }
 
 /* Media query for smaller devices */
@@ -556,48 +557,7 @@ h4 {
     justify-content: center; /* Adjusted for smaller devices */
     align-items: center; /* Adjusted for smaller devices */
     margin: -10px auto; /* Adjusted margin for smaller devices */
-    height: 19%;
-    padding-top:0px;
-    
-  }
-  .left{
-    padding-right: 50px;
-  }
-  #intro-footer{
-    align-self: center;
-    text-align: center;
-  }
-  .footer-lines{
-    text-align: center;
-  }
-  .input-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #hrs{
-     display: none;
-  }
-   .footer-copy1{
-     display:block;
-     
-   }
-  .footer-copy{
-   display: none;
-  }
-  #creditcard{
-   
-    text-align: center;
-  }
-  #demo{
-    text-align: center;
-  }
-
-  body{
-    height: 405%;
-  }
-  .footer-dev{
-    padding-top: 33px;
+    padding-top: 20px; /* Adjusted padding for smaller devices */
   }
 
   #footer-logo {
@@ -615,96 +575,65 @@ h4 {
 
   .footer-copy {
     margin-top: -10px; /* Adjusted margin for smaller devices */
-     font-size:18px;
-    padding-bottom:5px;
-    text-align:center;
-    padding-right:50px
-  }
-
-  .footer-txt {
     font-size: 16px; /* Adjusted font size for smaller devices */
+    padding-right: 20px; /* Adjusted padding for smaller devices */
   }
 
   h4 {
     font-size: 22px; /* Adjusted font size for smaller devices */
   }
-}
- .footer-copy1{
-   display: none;
-   color:#fff
- }
 
-.footer-dev{
-  margin-top: -45px;
-  color: #fff;
-  font-size: 16px;
-  margin-right: 50px;
-  float: right;
-}
-.footer-dev a{
-  text-decoration: none;
-  color: #fff;
-}
-#creditcard{
-  margin-top:-50px;
-  margin-left: 60px;
-  color:aqua;
-  font-family: Poppins;
-  font-size: 17px;
-  margin-bottom: -20px;
-}
-#demo{
-  /* margin-top:-90px; */
-  margin-left: 60px;
-  color:#fff;
-  font-family: Genos;
-  font-size: 43px;
-  line-height: .7;
-  word-spacing: 10px;
-  padding-top:5px;
-  padding-bottom: 5px;
-}
-.input-container {
-  display: flex;
-  align-items: center;
-  margin-left: 60px;
-}
-.input-field {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-.arrow {
-  animation: arrowAnimation 1s infinite;
-}
-@keyframes arrowAnimation {
-  0% {
-    transform: translateX(0);
+  .input-container {
+    margin-left: 0; /* Removed margin for smaller devices */
+    margin-top: 20px; /* Adjusted margin for smaller devices */
   }
-  50% {
-    transform: translateX(5px);
+
+  #hrs {
+    width: 80%; /* Adjusted width for smaller devices */
+    margin-left: 0; /* Removed margin for smaller devices */
+    margin-top: 20px; /* Adjusted margin for smaller devices */
+    margin-bottom: 20px; /* Adjusted margin for smaller devices */
   }
-  100% {
-    transform: translateX(0);
+
+  #intro-footer {
+    margin-left: 0; /* Removed margin for smaller devices */
+    text-align: center; /* Centered text for smaller devices */
+    font-size: 40px; /* Adjusted font size for smaller devices */
+  }
+
+  .footer-lines {
+    margin-top: -20px; /* Adjusted margin for smaller devices */
+    margin-left: 0; /* Removed margin for smaller devices */
+  }
+
+  #gif {
+    width: 200px; /* Adjusted width for smaller devices */
+  }
+
+  .footer-dev {
+    margin-top: 20px; /* Adjusted margin for smaller devices */
+    margin-right: 0; /* Removed margin for smaller devices */
+    float: none; /* Centered for smaller devices */
+    text-align: center; /* Centered text for smaller devices */
+  }
+
+  #creditcard {
+    margin-top: 20px; /* Adjusted margin for smaller devices */
+    margin-left: 0; /* Removed margin for smaller devices */
+    text-align: center; /* Centered text for smaller devices */
+  }
+
+  #demo {
+    margin-left: 0; /* Removed margin for smaller devices */
+ /* Centered text for smaller devices */
+    font-size: 30px; /* Adjusted font size for smaller devices */
+    word-spacing: 5px; /* Adjusted word spacing for smaller devices */
+    padding-top: 10px; /* Adjusted padding for smaller devices */
+    padding-bottom: 10px; /* Adjusted padding for smaller devices */
   }
 }
-#hrs{
-  width:40%;
-  margin-left:60px;
-  margin-top: 30px;
-  margin-bottom: -30px;
+.center{
+  margin-left: 50%;
+  transform: translate(-50%);
 }
-#intro-footer{
-  margin-left: 60px;
-  font-family: Itim;
-  font-size: 50px;
-  
-}
-.footer-lines{
-  margin-top: -50px;
-  margin-left: 60px;
-}
-#gif{
-  width:250px;
-}
+
